@@ -1,19 +1,15 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Karta</ion-title>
+    <ion-title>
+      Map
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="addMarker()"><ion-icon name="add"></ion-icon>Add Marker</button>
+    </ion-buttons> 
   </ion-navbar>
 </ion-header>
-
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <h1>Raukavagen!</h1>
-  <h2>Visby pistkarta</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI. Hej hej hemskt mycket hej
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+ 
+<ion-content>
+  <div #map id="map"></div> 
+  <!--<iframe src="https://www.google.com/maps/d/embed?mid=1oPRZRXSmI5vhrB-o8oAdVdSu1xU" width="640" height="480"></iframe>-->
 </ion-content>
